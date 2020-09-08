@@ -5,35 +5,39 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!--    <link rel="stylesheet" href="{{url_for ('static',filename='css/main.css') }}">-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="C:\Users\Vovan\Desktop\Flask_disignet\css\index.css">
     <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="CSS/style_home.css">
-
-
+  <link rel="stylesheet" href={{url_for('static', filename='index.css')}}>
 
     <title>{%block title%}{%endblock%}</title>
 
 </head>
+
+
 <body>
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">SofStore </a>
+    <a class="navbar-brand" href="#">Soft Store </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="home">Главная страница <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Главная страница <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="create_product">Добавить товар</a>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link" href="posters">Все товары</a>
+          <a class="nav-link" href="#">Все товары</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Про нас</a>
+          <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Контакт</a>
         </li>
       </ul>
     </div>
@@ -42,42 +46,20 @@
 {%block body%}{%endblock%}
 
 <footer class="container pt-4 my-md-5 pt-md-5 border-top">
-    <div class="row">
-      <div class="col-12 col-md">
-        <img class="mb-2" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-        <small class="d-block mb-3 text-muted">© 2017-2020</small>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Features</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Cool stuff</a></li>
-          <li><a class="text-muted" href="#">Random feature</a></li>
-          <li><a class="text-muted" href="#">Team feature</a></li>
-          <li><a class="text-muted" href="#">Stuff for developers</a></li>
-          <li><a class="text-muted" href="#">Another one</a></li>
-          <li><a class="text-muted" href="#">Last time</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Resource</a></li>
-          <li><a class="text-muted" href="#">Resource name</a></li>
-          <li><a class="text-muted" href="#">Another resource</a></li>
-          <li><a class="text-muted" href="#">Final resource</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>About</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Team</a></li>
-          <li><a class="text-muted" href="#">Locations</a></li>
-          <li><a class="text-muted" href="#">Privacy</a></li>
-          <li><a class="text-muted" href="#">Terms</a></li>
-        </ul>
-      </div>
+  <div class="row">
+    <div class="col-6 col-md">
+      <h2 id="contact">Контакт</h2>
+      <ul id="list" class="list-unstyled text-small ">
+        <li><img src="static\img\Mail.jpg" width="30px" class="img-responsive"><b>Email: Sucharik@gmail.com</b><a class="text-muted " href="#"> </a></li>
+        <li><img src="static\img\Phon.jpg" width="30px" class="img-responsive"><b>Телефон:</b> +48 733 897 364</a></li>
+        <li><img src="static\img\Facebook.jpg" width="30px" class="img-responsive"><b>Facebook:</b><a class="address" href="https://www.facebook.com/oleh.khristiuk"> facebook.com/oleh.khristiuk
+          </a>
+        </li>
+        <li><img src="static\img\Instagram.jpg" width="30px" class="img-responsive"><b>Instagram:</b><a class="address" href="#"> oleh.khristiuk</a></li>
+      </ul>
     </div>
-  </footer>
+  </div>
+</footer>
 </body>
 
 </html>

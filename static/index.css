@@ -1,0 +1,31 @@
+body,footer{
+  background: url(img/img4.jpg)no-repeat fixed;
+  background-size: cover;
+
+
+
+}
+#sh{
+  background: url(img/img4.jpg)no-repeat fixed center center;
+  padding-top:70px;
+  padding-bottom: 40px;
+  margin-bottom: -40px;
+}
+
+.navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    #list{
+      white-space: nowrap;
+    }
+.address{
+  color:darkgrey;
+  text-decoration: underline;
+}
+@media only screen and (min-width:1400px) and (max-width:1920px)
+{
+    .address {
+    color: black;
+
+  }
+}
