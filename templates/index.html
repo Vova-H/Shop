@@ -1,7 +1,7 @@
 {%extends 'base.html' %}
 
 {%block title%}
-Главная Страница
+Soft Store
 {%endblock%}
 
 <head>
@@ -19,24 +19,24 @@
 <body>
 
 
-    <div class="container jumbotron text-center" id="sh">
-      <h1>Выберите категорию</h1>
-    </div>
+      <div class="container jumbotron text-center" id="sh">
+    <h1>Выберите категорию</h1>
+  </div>
 
 
-  <div class="container "  >
+  <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <div class="card mb-6 shadow-s">
-          <img src="/static/img/unnamed.jpg" width=" 100%" class="img-responsive">
-          <div class="card-body">
+      <div class="col-md-4 ramka">
+        <div class="card mb-6 shadow-s ">
+          <img src="static\img\unnamed.jpg" width=" 100%" class="img-responsive ">
+          <div class="card-body kategoria">
             <p class="card-text">Односпальное белье
               <br>
               Размер: 150х215 cm
             </p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">Просмотреть</button>
+                <button type="button" class="btn btn-md btn-outline-secondary viewb">Просмотреть</button>
               </div>
             </div>
           </div>
@@ -44,17 +44,17 @@
       </div>
 
 
-      <div class="col-md-4">
+      <div class="col-md-4 ramka">
         <div class="card mb-6 shadow-s">
-          <img src="/static/img/unnamed.jpg" width=" 100%" class="img-responsive">
-          <div class="card-body">
+          <img src="static\img\unnamed.jpg" width=" 100%" class="img-responsive ">
+          <div class="card-body kategoria">
             <p class="card-text">Двуспальное белье
               <br>
               Размер: 220х240 cm
             </p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">Просмотреть</button>
+                <button type="button" class="btn btn-md btn-outline-secondary viewb">Просмотреть</button>
               </div>
             </div>
           </div>
@@ -62,33 +62,25 @@
       </div>
 
 
-      <div class="col-md-4">
+      <div class="col-md-4 ramka">
         <div class="card mb-6 shadow-s">
-          <img src="/static/img/unnamed.jpg" width=" 100%" class="img-responsive">
-          <div class=" card-body">
+          <img src="static\img\unnamed.jpg" width=" 100%" class="img-responsive ">
+          <div class=" card-body kategoria">
             <p class="card-text">Семейное белье
               <br>
               Размер: 240х280 cm
             </p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">Просмотреть</button>
+                <button type="button" class="btn btn-md btn-outline-secondary viewb">Просмотреть</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
     </div>
   </div>
+</body>
 
 </body>
 {%endblock%}
